@@ -3,12 +3,14 @@ import { useState } from 'react'
 import React from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link';
 
 const navigation = [
-    { name: 'Home', href: '#' },
-    { name: 'About us', href: '#' },
-    { name: 'inex', href: '#' },
-    { name: 'contact', href: '#' },
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
+    { name: 'inex', href: '#inex' },
+    { name: 'contact', href: '#contact' },
+    { name: 'register', href: '' },
 ]
 
 function Navbar() {
@@ -34,9 +36,9 @@ function Navbar() {
                     </div>
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item) => (
-                            <a key={item.name} href={item.href} className="uppercase leading-6 hover:px-10 transition-all duration-500 hover:duration-500 hover:text-blue-300">
+                            <Link key={item.name} href={item.href} className="uppercase leading-6 hover:px-10 transition-all duration-500 hover:duration-500 hover:text-blue-100">
                                 {item.name}
-                            </a>
+                            </Link>
                         ))}
                     </div>
                 </nav>
@@ -62,13 +64,13 @@ function Navbar() {
                             <div className="-my-6">
                                 <div className="space-y-2 py-6">
                                     {navigation.map((item) => (
-                                        <a
+                                        <Link onClick={() => setMobileMenuOpen(false)}
                                             key={item.name}
                                             href={item.href}
                                             className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 uppercase"
                                         >
                                             {item.name}
-                                        </a>
+                                        </Link>
                                     ))}
                                 </div>
                             </div>

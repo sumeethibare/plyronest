@@ -7,22 +7,20 @@ import { SiFacebook, SiInstagram, SiTwitter, SiYoutube } from "react-icons/si";
 
 export const Base = () => {
     return (
-        <div className="min-h-screen bg-zinc-900 px-4 py-12 text-zinc-50">
-            {/* <Logo /> */}
+        <div id="contact" className="bg-zinc-900 px-4 py-12 text-zinc-50">
+            <Logo />
             <motion.div
                 initial="initial"
                 animate="animate"
                 transition={{
                     staggerChildren: 0.05,
                 }}
-                className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4"
+                className="mx-auto grid max-w-6xl grid-flow-dense grid-cols-12 gap-4"
             >
                 <HeaderBlock />
                 <SocialsBlock />
                 <LocationBlock />
-                <EmailListBlock />
             </motion.div>
-            {/* <Footer /> */}
         </div>
     );
 };
@@ -45,11 +43,11 @@ const Block = ({ className, ...rest }) => {
             transition={{
                 type: "spring",
                 mass: 3,
-                stiffness: 400,
-                damping: 50,
+                stiffness: 500,
+                damping: 30,
             }}
             className={twMerge(
-                "col-span-4 rounded-lg border border-zinc-700 bg-zinc-800 p-6",
+                "col-span-4 border border-zinc-700 bg-zinc-800 p-6",
                 className
             )}
             {...rest}
@@ -71,30 +69,16 @@ const HeaderBlock = () => (
             </span>
         </h1>
         <a
-            href="#"
-            className="flex items-center gap-1 text-red-300 hover:underline"
+            href="mailto:contact@plyronest.com"
+            className="flex items-center gap-1 text-black justify-between btn butanimo"
         >
-            Contact Us <FiArrowRight />
+            contact@plyronest.com <FiArrowRight />
         </a>
     </Block>
 );
 
 const SocialsBlock = () => (
     <>
-        <Block
-            whileHover={{
-                rotate: "2.5deg",
-                scale: 1.1,
-            }}
-            className="col-span-6 bg-red-500 md:col-span-3"
-        >
-            <a
-                href="#"
-                className="grid h-full place-content-center text-3xl text-white"
-            >
-                <SiYoutube />
-            </a>
-        </Block>
         <Block
             whileHover={{
                 rotate: "-2.5deg",
@@ -123,45 +107,17 @@ const SocialsBlock = () => (
                 <SiInstagram />
             </a>
         </Block>
-        <Block
-            whileHover={{
-                rotate: "2.5deg",
-                scale: 1.1,
-            }}
-            className="col-span-6 bg-blue-500 md:col-span-3"
-        >
-            <a
-                href="#"
-                className="grid h-full place-content-center text-3xl text-white"
-            >
-                <SiTwitter />
-            </a>
-        </Block>
     </>
 );
 
 const LocationBlock = () => (
-    <Block className="col-span-12 flex flex-col items-center gap-4 md:col-span-3">
-        <FiMapPin className="text-3xl" />
-        <p className="text-center text-lg text-zinc-400">Mangaluru</p>
-    </Block>
-);
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124440.40060563949!2d74.76966150184153!3d12.9229792838206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x827bbc7a74fcfe64!2sMangaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1718378077972!5m2!1sen!2sin"
+        className="w-full h-full col-span-12 flex flex-col items-center gap-4 md:col-span-6 lg:h-60 justify-center border-none"
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
 
-const EmailListBlock = () => (
-    <Block className="col-span-12 md:col-span-9">
-        <p className="mb-3 text-lg">Contact Though Mail</p>
-        <form
-            onSubmit={(e) => e.preventDefault()}
-            className="flex items-center gap-2"
-        >
-            <button
-                type="submit"
-                className="w-full hover:w-1/2 hover:duration-300 active:scale-95 hover:scale-105 flex items-center gap-2 whitespace-nowrap rounded bg-zinc-50 px-3 py-2 text-sm font-medium text-zinc-900 transition-all hover:bg-zinc-300"
-            >
-                <FiMail /> pyronest@gmail.com
-            </button>
-        </form>
-    </Block>
 );
 
 const Logo = () => {
@@ -186,16 +142,3 @@ const Logo = () => {
         </svg>
     );
 };
-
-// const Footer = () => {
-//     return (
-//         <footer className="mt-12">
-//             <p className="text-center text-zinc-400">
-//                 Made with ❤️ by{" "}
-//                 <a href="#" className="text-red-300 hover:underline">
-//                     @Sumeet Hibare
-//                 </a>
-//             </p>
-//         </footer>
-//     );
-// };

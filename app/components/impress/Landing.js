@@ -4,7 +4,7 @@ export default function Example() {
     return (
 
 
-        <div className="relative isolate px-6 pt-14 lg:px-8 h-screen bg-zinc-950">
+        <div id="home" className="relative isolate px-6 pt-14 lg:px-8 h-screen bg-zinc-950">
             <div className="max-w-2xl py-32 sm:py-48 lg:py-56">
                 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                     <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-gray-500 hover:duration-500 duration-500 hover:ring-gray-900/20 lowercase font-serif italic">
@@ -21,7 +21,7 @@ export default function Example() {
                 </h1>
             </div>
 
-            <a href="#" className="text-gray-300 float-right right-0 absolute bottom-0 p-10">
+            <a href="#about" className="text-gray-300 float-right right-0 absolute bottom-0 p-10">
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />

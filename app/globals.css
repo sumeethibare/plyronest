@@ -5,3 +5,11 @@
 .scrolly::-webkit-scrollbar {
     display: none;
 }
+
+.animo {
+    @apply hover:duration-500 duration-300
+}
+
+.butanimo {
+    @apply hover:scale-105 active:scale-75 hover:-rotate-1 transition-all
+}

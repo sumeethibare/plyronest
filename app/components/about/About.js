@@ -1,30 +1,8 @@
 'use client';
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-
-const ShuffleHero = () => {
-    return (
-        <div className="bg-zinc-950">
-            <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-7xl mx-auto">
-                <div>
-                    <span className="block mb-4 text-xs md:text-sm text-blue-300 font-medium">
-                        Better every day
-                    </span>
-                    <h3 className="text-4xl md:text-7xl font-semibold text-zinc-300">
-                        Let's beign the journey
-                    </h3>
-                    <p className="text-base md:text-lg text-slate-300 my-4 md:my-6">
-                        Plyronest is dedicated to help people to build their dream company supporting them to grow their product.
-                    </p>
-                    <button className="bg-blue-500 text-white font-medium py-2 px-4 hover:bg-blue-600 active:scale-95 hover:scale-105 transition-all rounded">
-                        Contact Team
-                    </button>
-                </div>
-                <ShuffleGrid />
-            </section>
-        </div>
-    );
-};
+import { Services } from "./Services";
+import Link from "next/link";
 
 const shuffle = (array) => {
     let currentIndex = array.length,
@@ -110,8 +88,8 @@ const squareData = [
     },
 ];
 
-const generateSquares = () => {
-    return shuffle(squareData).map((sq) => (
+const generateSquares = (data) => {
+    return data.map((sq) => (
         <motion.div
             key={sq.id}
             layout
@@ -125,25 +103,49 @@ const generateSquares = () => {
     ));
 };
 
+const ShuffleHero = () => {
+    return (
+        <div id="about" className="bg-zinc-950">
+            <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-7xl mx-auto">
+                <div>
+                    <span className="block mb-4 text-xs md:text-sm text-blue-300 font-medium">
+                        Better every day
+                    </span>
+                    <h3 className="text-4xl md:text-7xl font-semibold text-zinc-300">
+                        Let's begin the journey
+                    </h3>
+                    <p className="text-base md:text-lg text-slate-300 my-4 md:my-6">
+                        Plyronest is dedicated to help people to build their dream company supporting them to grow their product.
+                    </p>
+                    <Link href="#about" className="bg-white text-black font-medium py-2 px-4 hover:bg-green-300 butanimo">
+                        Contact Team
+                    </Link>
+                </div>
+                <ShuffleGrid />
+            </section>
+            <Services />
+        </div>
+    );
+};
+
 const ShuffleGrid = () => {
     const timeoutRef = useRef(null);
-    const [squares, setSquares] = useState(generateSquares());
+    const [squares, setSquares] = useState(generateSquares(squareData));
 
     useEffect(() => {
+        const shuffleSquares = () => {
+            setSquares(generateSquares(shuffle([...squareData])));
+            timeoutRef.current = setTimeout(shuffleSquares, 3000);
+        };
+
         shuffleSquares();
 
         return () => clearTimeout(timeoutRef.current);
     }, []);
 
-    const shuffleSquares = () => {
-        setSquares(generateSquares());
-
-        timeoutRef.current = setTimeout(shuffleSquares, 3000);
-    };
-
     return (
         <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-2">
-            {squares.map((sq) => sq)}
+            {squares}
         </div>
     );
 };

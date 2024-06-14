@@ -1,12 +1,12 @@
-import About from "./components/About";
-import Landing from "./components/Landing";
-import { Services } from "./components/Services";
+import About from "./components/about/About";
+import Inex from "./components/inex/Inex";
+import Landing from "./components/impress/Landing";
 export default function Home() {
   return (
     <>
       <Landing />
       <About />
-      <Services />
+      <Inex />
     </>
   );
 }
