@@ -27,10 +27,6 @@ const squareData = [
         src: "/showcase/i1.jpg",
     },
     {
-        id: 2,
-        src: "/showcase/i2.jpg",
-    },
-    {
         id: 3,
         src: "/showcase/i3.jpg",
     },
@@ -50,14 +46,6 @@ const squareData = [
         id: 7,
         src: "/showcase/i7.jpg",
     },
-    {
-        id: 8,
-        src: "/showcase/i8.jpg",
-    },
-    {
-        id: 9,
-        src: "/showcase/i1.jpg",
-    },
 
 ];
 
@@ -67,7 +55,7 @@ const generateSquares = (data) => {
             key={sq.id}
             layout
             transition={{ duration: 2, type: "spring" }}
-            className="w-full h-full lg:rounded-3xl rounded-xl"
+            className="w-full h-full lg:rounded-2xl rounded-xl"
             style={{
                 backgroundImage: `url(${sq.src})`,
                 backgroundSize: "cover",
@@ -117,7 +105,7 @@ const ShuffleGrid = () => {
     }, []);
 
     return (
-        <div className="grid grid-cols-3 grid-rows-3 h-[450px] gap-2">
+        <div className="grid grid-cols-3 grid-rows-2 h-[450px] gap-2">
             {squares}
         </div>
     );
