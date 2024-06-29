@@ -8,12 +8,12 @@ export const animatePageIn = () => {
 
   if (bannerOne && bannerTwo && bannerThree && bannerFour) {
     const tl = gsap.timeline();
-
+    tl.delay(0.6);
     tl.set([bannerOne, bannerTwo, bannerThree, bannerFour], {
       yPercent: 0,
     }).to([bannerOne, bannerTwo, bannerThree, bannerFour], {
       yPercent: -100,
-      stagger: 0.3,
+      stagger: 0.1,
     });
   }
 };
@@ -26,6 +26,7 @@ export const animatePageOut = (href, router) => {
 
   if (bannerOne && bannerTwo && bannerThree && bannerFour) {
     const tl = gsap.timeline();
+    tl.delay(0.6);
 
     tl.set([bannerOne, bannerTwo, bannerThree, bannerFour], {
       yPercent: 100,

@@ -6,9 +6,9 @@ function Inex() {
         <section id="inex" className="bg-white flex lg:flex-row flex-col">
             <div className="py-8 px-4 max-w-4xl sm:py-16 lg:px-36">
                 <h2 className="mb-4 text-3xl tracking-tight font-semibold">Innovation that brings us together with <br></br> <span className='text-blue-300 text-6xl font-extrabold'>inex india.</span></h2>
-                <p className="mb-8 font-light text-zinc-700 sm:text-xl lowercase tracking-tight">Plyronest is in collaboration with inex india to promote Innovation and entreprenurship among the students </p>
+                <p className="mb-8 font-medium text-zinc-500 sm:text-xl lowercase">Plyronest is in collaboration with inex india to promote Innovation and entreprenurship among the students </p>
                 <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-                    <a href="https://www.inex-india.com/" className='flex items-center justify-between btn butanimo lg:btn-ghost btn-primary'>
+                    <a href="https://www.inex-india.com/" className='flex items-center justify-between btn butanimo border-2 border-zinc-400'>
                         inex <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="lg:size-3 size-4">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                         </svg>

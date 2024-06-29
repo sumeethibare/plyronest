@@ -11,5 +11,5 @@
 }
 
 .butanimo {
-    @apply hover:scale-105 active:scale-75 hover:-rotate-1 transition-all
+    @apply active:lg:scale-75 hover:-rotate-2 transition-all lg:hover:scale-110
 }

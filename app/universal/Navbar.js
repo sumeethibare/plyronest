@@ -6,21 +6,22 @@ import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
 
 const navigation = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'inex', href: '#inex' },
-    { name: 'contact', href: '#contact' },
-    { name: 'register', href: '' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'inex', href: '/inex' },
+    { name: 'training', href: '/training' },
+    { name: 'gallery', href: '/gallery' },
+    { name: 'connect', href: 'https://tally.so/r/3E1YW2' },
 ]
 
 function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
         <>
-            <header className="inset-x-0 top-0 z-50 bg-zinc-950 fixed text-white">
+            <header className="inset-x-0 top-0 z-50 bg-zinc-950 sticky text-white">
                 <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                     <div className="flex lg:flex-1">
-                        <a href="#" className="-m-1.5 p-1.5 text-lg">
+                        <a href="/" className="-m-1.5 p-1.5 text-lg">
                             Plyronest
                         </a>
                     </div>
@@ -36,7 +37,7 @@ function Navbar() {
                     </div>
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item) => (
-                            <Link key={item.name} href={item.href} className="uppercase leading-6 hover:px-10 transition-all duration-500 hover:duration-500 hover:text-blue-100">
+                            <Link key={item.name} href={item.href} className="uppercase hover:px-4 hover:text-emerald-300 animo leading-6">
                                 {item.name}
                             </Link>
                         ))}

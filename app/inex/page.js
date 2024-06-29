@@ -1,8 +1,11 @@
 import React from 'react'
+import InexPartnership from './components/InexPartnership'
 
 function page() {
     return (
-        <div>page</div>
+        <>
+            <InexPartnership />
+        </>
     )
 }
 
