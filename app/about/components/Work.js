@@ -1,6 +1,7 @@
 const links = [
     { name: 'values', href: '#' },
     { name: 'leadership', href: '#people' },
+    { name: 'team', href: '#team' },
 ]
 const stats = [
     { name: 'Studetents Enrolled', value: '300+' },
@@ -57,14 +58,14 @@ export default function Work() {
                             </a>
                         ))}
                     </div>
-                    <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+                    {/* <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
                         {stats.map((stat) => (
                             <div key={stat.name} className="flex flex-col-reverse btn btn-glass border-0 butanimo h-32 justify-center lg:px-6 px-4 bg-zinc-900 group">
                                 <dt className="leading-7 text-zinc-300 lg:group-hover:text-zinc-950">{stat.name}</dt>
                                 <dd className="text-2xl group-hover:text-5xl animo font-bold leading-9 tracking-tight text-zinc-300 lg:group-hover:text-zinc-950">{stat.value}</dd>
                             </div>
                         ))}
-                    </dl>
+                    </dl> */}
                 </div>
             </div>
         </div>

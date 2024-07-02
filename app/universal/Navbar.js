@@ -11,14 +11,14 @@ const navigation = [
     { name: 'inex', href: '/inex' },
     { name: 'training', href: '/training' },
     { name: 'gallery', href: '/gallery' },
-    { name: 'connect', href: 'https://tally.so/r/3E1YW2' },
+    { name: 'connect', href: '/connect' },
 ]
 
 function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
         <>
-            <header className="inset-x-0 top-0 z-50 bg-zinc-950 sticky text-white">
+            <header className="inset-x-0 top-0 z-40 bg-zinc-950 sticky text-white">
                 <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                     <div className="flex lg:flex-1">
                         <a href="/" className="-m-1.5 p-1.5 text-lg">

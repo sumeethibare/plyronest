@@ -13,6 +13,12 @@ const coreteam = [
         imageUrl: sumeet,
     },
     {
+        name: 'Vinay Buddhi',
+        role: 'Technical Team',
+        imageUrl:
+            buddhi,
+    },
+    {
         name: 'Sanni Kumar',
         role: 'Technical Team',
         imageUrl:
@@ -25,12 +31,6 @@ const coreteam = [
             somesh,
     },
     {
-        name: 'Vinay Buddhi',
-        role: 'Technical Team',
-        imageUrl:
-            buddhi,
-    },
-    {
         name: 'Shivraj',
         role: 'Technical Team',
         imageUrl:
@@ -40,7 +40,7 @@ const coreteam = [
 
 export default function People() {
     return (
-        <div id="people" className="bg-zinc-950 py-24 sm:py-32">
+        <div id="team" className="bg-zinc-950 py-24 sm:py-32">
             <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
                 <div className="max-w-2xl">
                     <h2 className="text-3xl font-bold tracking-tight text-zinc-200 sm:text-5xl text-center lg:text-left">Meet our Core Team</h2>
