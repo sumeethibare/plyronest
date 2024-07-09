@@ -4,6 +4,8 @@ import React from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
+import Logo from './logo.png'
+import Image from 'next/image';
 
 const navigation = [
     { name: 'Home', href: '/' },
@@ -20,7 +22,8 @@ function Navbar() {
         <>
             <header className="inset-x-0 top-0 z-40 bg-zinc-950 sticky text-white">
                 <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-                    <div className="flex lg:flex-1">
+                    <div className="flex lg:flex-1 gap-2">
+                        <Image src={Logo} className='size-6' />
                         <a href="/" className="-m-1.5 p-1.5 text-lg">
                             Plyronest
                         </a>

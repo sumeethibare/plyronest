@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight } from "react-icons/fi";
-import { SiFacebook, SiInstagram } from "react-icons/si";
+import { SiLinkedin, SiInstagram } from "react-icons/si";
 import Image from "next/image";
 import brand from '../../public/logo.png'
 
@@ -81,13 +81,13 @@ const SocialsBlock = () => (
                 rotate: "-1.5deg",
                 scale: 1.1,
             }}
-            className="col-span-6 bg-green-600 md:col-span-3"
+            className="col-span-6 bg-blue-600 md:col-span-3"
         >
             <a
-                href="#"
+                href="https://www.linkedin.com/company/plyronest/" target="_blank"
                 className="grid h-full place-content-center text-3xl text-white"
             >
-                <SiFacebook />
+                <SiLinkedin />
             </a>
         </Block>
         <Block
