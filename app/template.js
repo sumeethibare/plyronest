@@ -1,9 +1,8 @@
 "use client";
-
-import { Base } from "./universal/Base";
-import Navbar from "./universal/Navbar";
 import { animatePageIn } from "./utils/animations";
 import { useEffect } from "react";
+import { Base } from "./universal/Base";
+import Navbar from "./universal/Navbar";
 
 export default function Template({ children }) {
   useEffect(() => {
@@ -28,9 +27,11 @@ export default function Template({ children }) {
         id="banner-4"
         className="h-screen bg-black z-50 fixed top-0 right-3/4 w-1/4"
       />
-      <Navbar />
-      {children}
-      <Base />
+      <div id="page-content">
+        <Navbar />
+        {children}
+        <Base />
+      </div>
     </div>
   );
 }

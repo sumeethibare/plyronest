@@ -108,12 +108,9 @@ const SocialsBlock = () => (
 );
 
 const LocationBlock = () => (
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124440.40060563949!2d74.76966150184153!3d12.9229792838206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x827bbc7a74fcfe64!2sMangaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1718378077972!5m2!1sen!2sin"
-        className="w-full h-full col-span-12 flex flex-col items-center gap-4 md:col-span-6 lg:h-60 justify-center border-none"
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62759.232611545915!2d77.05640918729958!3d13.349381022300728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb02c3b632e23b9%3A0xe15fb239e9d737bb!2sTumakuru%2C%20Karnataka!5e1!3m2!1sen!2sin!4v1721152839624!5m2!1sen!2sin" className="w-full h-full col-span-12 flex flex-col items-center gap-4 md:col-span-6 lg:h-60 justify-center border-none"
         loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-    ></iframe>
+        referrerPolicy="no-referrer-when-downgrade"></iframe>
 
 );
 
