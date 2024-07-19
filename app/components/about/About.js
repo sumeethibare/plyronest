@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Services } from "./Services";
 import Link from "next/link";
+import Marketing from "./Marketing"
 
 const shuffle = (array) => {
     let currentIndex = array.length,
@@ -78,12 +79,16 @@ const ShuffleHero = () => {
                     <p className="text-base md:text-lg text-slate-300 my-4 md:my-6">
                         Plyronest is dedicated to help people to build their dream company supporting them to grow their product.
                     </p>
-                    <Link href="/about" className="bg-white text-black font-medium py-2 px-4 hover:bg-zinc-800 hover:text-white butanimo hover:border-white hover:border">
+                    <Link href="/about" className="text-white bg-zinc-800 font-medium py-2 px-4 butanimo border-black hover:border-white border hover:duration-500 transition-all hover:border mr-2 rounded-xl">
                         know more about us
+                    </Link>
+                    <Link href="https://forms.gle/pWVmutarqWmreteJ8" target="_blank" className="bg-white text-black font-medium py-2 px-4 hover:bg-zinc-800 hover:text-white butanimo hover:duration-300 transition-all hover:border-white hover:border rounded-xl">
+                        Register Now
                     </Link>
                 </div>
                 <ShuffleGrid />
             </section>
+            <Marketing />
             <Services />
         </div>
     );

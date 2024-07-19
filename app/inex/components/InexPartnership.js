@@ -6,7 +6,8 @@ const InexPartnership = () => {
         <section className="relative">
             <div className="mx-auto w-full max-w-8xl px-5 py-32 md:px-10 md:py-24 lg:py-32">
                 <div className="mx-auto mb-12 w-full max-w-3xl text-center md:mb-16 lg:mb-20">
-                    <h1 className="mb-4 text-3xl font-semibold md:text-6xl">
+                    <p className='font-semibold uppercase font-mono'>INEX karnataka Chapter</p>
+                    <h1 className="mb-4 text-3xl font-semibold md:text-6xl p-10">
                         The Platform for the innovators{' '}</h1>
                     <span
                         className="bg-cover bg-center px-4 text-white text-4xl font-semibold md:text-9xl butanimo btn rotate-2 lg:h-32"
@@ -53,11 +54,11 @@ const InexPartnership = () => {
 
                 <p className='text-3xl font-semibold text-zinc-700 lg:p-2 py-2'>Recent On INEX</p>
                 <div className='grid lg:grid-cols-3 mx-auto max-w-7xl p-2 gap-4'>
-                    <iframe className='w-96 h-60 rounded-2xl butanimo' src="https://www.youtube.com/embed/BPqyhPz6DTA?si=T1An87T1Iz392V6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe className='w-96 h-60 rounded-2xl butanimo' src="https://www.youtube.com/embed/BPqyhPz6DTA?si=T1An87T1Iz392V6E" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 
-                    <iframe className='w-96 h-60 rounded-2xl butanimo' src="https://www.youtube.com/embed/WU5DXohkMno?si=lpELBCw4hn6BPmKN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe className='w-96 h-60 rounded-2xl butanimo' src="https://www.youtube.com/embed/WU5DXohkMno?si=lpELBCw4hn6BPmKN" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
 
-                    <iframe className='w-96 h-60 rounded-2xl butanimo' src="https://www.youtube.com/embed/EiRvJCEiITo?si=JGY3cnopKRQg63L1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe className='w-96 h-60 rounded-2xl butanimo' src="https://www.youtube.com/embed/EiRvJCEiITo?si=JGY3cnopKRQg63L1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
                 </div>
 
             </div>

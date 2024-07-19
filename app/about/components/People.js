@@ -12,7 +12,7 @@ const people = [
             lohith,
     },
     {
-        name: 'Tosif Babu Saheb Nayakwadi',
+        name: 'Thosif Bapu Saheb Naikwadi',
         role: 'Co-Founder / CMO',
         imageUrl:
             thosif,

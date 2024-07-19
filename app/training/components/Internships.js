@@ -34,7 +34,7 @@ export default function Internships() {
         <div className="bg-zinc-950">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-                    <h2 className="text-2xl font-semibold text-zinc-50">Internships Offered</h2>
+                    <h2 className="text-2xl font-semibold text-zinc-50">Training Offered</h2>
 
                     <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0 lg:gap-y-14">
                         {callouts.map((callout) => (
