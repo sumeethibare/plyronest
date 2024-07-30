@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Services } from "./Services";
 import Link from "next/link";
 import Marketing from "./Marketing"
+import Inex from "../inex/Inex"
 
 const shuffle = (array) => {
     let currentIndex = array.length,
@@ -70,7 +71,7 @@ const ShuffleHero = () => {
         <div id="about" className="bg-zinc-950">
             <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-7xl mx-auto">
                 <div>
-                    <span className="block mb-4 text-xs md:text-sm text-blue-100 lowercase font-mono tracking-tight">
+                    <span className="block mb-4 text-xs md:text-sm text-green-100 lowercase font-mono tracking-tight">
                         Better every day
                     </span>
                     <h3 className="text-4xl md:text-7xl font-semibold text-zinc-50">
@@ -79,15 +80,16 @@ const ShuffleHero = () => {
                     <p className="text-base md:text-lg text-slate-300 my-4 md:my-6">
                         Plyronest is dedicated to help people to build their dream company supporting them to grow their product.
                     </p>
-                    <Link href="/about" className="text-white bg-zinc-800 font-medium py-2 px-4 butanimo border-black hover:border-white border hover:duration-500 transition-all hover:border mr-2 rounded-xl">
+                    <Link href="/about" className="text-white bg-zinc-800 font-medium py-2 px-4 butanimo border-black hover:border-green-400 border-2 hover:text-green-400 hover:duration-500 transition-all hover:border-2 mr-2 rounded-xl">
                         know more about us
                     </Link>
-                    <Link href="https://forms.gle/pWVmutarqWmreteJ8" target="_blank" className="bg-white text-black font-medium py-2 px-4 hover:bg-zinc-800 hover:text-white butanimo hover:duration-300 transition-all hover:border-white hover:border rounded-xl">
+                    <Link href="https://forms.gle/pWVmutarqWmreteJ8" target="_blank" className="bg-white hover:bg-green-400 text-black font-medium py-2 px-4 hover:text-black butanimo hover:duration-300 transition-all rounded-xl">
                         Register Now
                     </Link>
                 </div>
                 <ShuffleGrid />
             </section>
+            <Inex />
             <Marketing />
             <Services />
         </div>

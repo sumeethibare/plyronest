@@ -46,7 +46,7 @@ const Block = ({ className, ...rest }) => {
                 type: "spring",
                 mass: 3,
                 stiffness: 500,
-                damping: 30,
+                damping: 80,
             }}
             className={twMerge(
                 "col-span-4 bg-zinc-900 p-6",
@@ -59,7 +59,6 @@ const Block = ({ className, ...rest }) => {
 
 const HeaderBlock = () => (
     <Block className="col-span-12 row-span-2 md:col-span-6">
-        <Logo />
         <h1 className="mb-12 text-4xl font-medium leading-tight">
             <span className="text-zinc-400">
                 Facing Any Problems? reach us directly here
@@ -67,7 +66,7 @@ const HeaderBlock = () => (
         </h1>
         <a
             href="mailto:contact@plyronest.com"
-            className="flex items-center gap-1 text-black justify-between btn butanimo"
+            className="flex items-center gap-1 text-black justify-between btn"
         >
             contact@plyronest.com <FiArrowRight />
         </a>
@@ -113,16 +112,6 @@ const LocationBlock = () => (
         referrerPolicy="no-referrer-when-downgrade"></iframe>
 
 );
-
-const Logo = () => {
-
-    return (
-        // <Image src={brand} className="mb-4 size-14 rounded-full" />
-        <div className="mb-4 size-14 rounded-full bg-zinc-950 border-8 border-zinc-50">
-
-        </div>
-    );
-};
 
 const Foot = () => {
     return (

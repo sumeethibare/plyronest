@@ -3,18 +3,25 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Img1 from '/public/img1.jpg';
 import Img2 from '/public/img2.jpg';
+import Img3 from '/public/img3.jpg';
 
 const postermarkets = [
+    {
+        id: 3,
+        href: '/inex',
+        imageSrc: Img2,
+    },
+    {
+        id: 2,
+        href: '/inex',
+        imageSrc: Img3,
+    },
     {
         id: 1,
         href: '/inex',
         imageSrc: Img1,
     },
-    {
-        id: 2,
-        href: '/inex',
-        imageSrc: Img2,
-    },
+
 ];
 
 export default function Example() {
@@ -83,7 +90,7 @@ export default function Example() {
                             &#x2715;
                         </button>
                         <div className="w-screen max-w-4xl max-h-screen overflow-auto">
-                            <Image
+                            <Image download
                                 src={modalImageSrc}
                                 className="w-full h-auto object-contain"
                             />

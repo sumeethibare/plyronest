@@ -10,7 +10,6 @@ export const animatePageIn = () => {
   if (bannerOne && bannerTwo && bannerThree && bannerFour && pageContent) {
     const tl = gsap.timeline();
 
-    // Hide page content at the beginning
     tl.set(pageContent, { autoAlpha: 0 });
 
     tl.set([bannerOne, bannerTwo, bannerThree, bannerFour], {
@@ -23,7 +22,7 @@ export const animatePageIn = () => {
         stagger: 0.1,
       })
       .to([bannerOne, bannerTwo, bannerThree, bannerFour], {
-        yPercent: -100,
+        yPercent: 100,
         stagger: 0.1,
       })
       // Show page content after animation
@@ -52,11 +51,11 @@ export const animatePageOut = (href, router) => {
       .to([bannerOne, bannerTwo, bannerThree, bannerFour], {
         autoAlpha: 1,
         yPercent: 0,
-        stagger: 0.3,
+        stagger: 0.1,
       })
       .to([bannerOne, bannerTwo, bannerThree, bannerFour], {
         yPercent: 100,
-        stagger: 0.3,
+        stagger: 0.1,
         onComplete: () => {
           router.push(href);
         },
