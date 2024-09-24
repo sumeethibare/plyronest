@@ -1,49 +1,25 @@
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Img1 from '/public/img1.jpg';
-import Img2 from '/public/img2.jpg';
-import Img3 from '/public/img3.jpg';
-import Img4 from '/public/img4.jpg';
-import Img5 from '/public/img5.jpg';
-import Img6 from '/public/img6.jpg';
-import Img7 from '/public/Img7.png';
+import Img2 from '/public/inexwinners/2.jpg';
+import Img3 from '/public/inexwinners/3.jpg';
+
+
 
 const postermarkets = [
     {
-        id: 3,
         href: '/inex',
         imageSrc: Img2,
     },
+
     {
-        id: 2,
         href: '/inex',
         imageSrc: Img3,
-    },
-    {
-        id: 1,
-        href: '/inex',
-        imageSrc: Img1,
-    },
-    {
-        id: 1,
-        href: '/inex',
-        imageSrc: Img4,
-    },
-    {
-        id: 1,
-        href: '/inex',
-        imageSrc: Img5,
-    },
-    {
-        id: 1,
-        href: '/inex',
-        imageSrc: Img7,
     },
 
 ];
 
-export default function Example() {
+export default function Winners() {
     const [modalImageSrc, setModalImageSrc] = useState(null);
     const modalRef = useRef(null);
 
@@ -76,7 +52,8 @@ export default function Example() {
     }, [modalImageSrc]);
 
     return (
-        <div className="mx-auto max-w-2xl px-4 py-6 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <div className="bg-zinc-50 max-w-2xl px-4 py-6 sm:px-6 sm:py-24 lg:min-w-full lg:px-20">
+            <p className='text-zinc-900 text-3xl font-semibold'>Winners Of Inex Karnataka Chapter</p>
             <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                 {postermarkets.map((postermarket) => (
                     <div key={postermarket.id} className="group relative">
@@ -103,7 +80,7 @@ export default function Example() {
             </div>
 
             {modalImageSrc && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-75">
                     <div ref={modalRef} className="relative bg-white rounded-lg overflow-hidden">
                         <button onClick={closeModal} className="absolute top-5 right-5 bg-red-500 text-white rounded-full p-4">
                             &#x2715;

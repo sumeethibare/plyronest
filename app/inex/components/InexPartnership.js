@@ -1,6 +1,8 @@
+"use client";
 import Link from 'next/link';
 import React from 'react';
 import { BookOpenIcon } from '@heroicons/react/24/outline';
+import Winners from '../../components/about/Winners';
 
 const InexPartnership = () => {
     return (
@@ -46,15 +48,19 @@ const InexPartnership = () => {
 
                 <p className='text-3xl font-semibold text-zinc-700 lg:p-2 py-2'>Recent On INEX</p>
                 <div className='grid lg:grid-cols-3 mx-auto max-w-7xl p-2 gap-4'>
+
                     <iframe className='w-96 h-60 rounded-2xl butanimo' src="https://www.youtube.com/embed/BPqyhPz6DTA?si=T1An87T1Iz392V6E" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 
                     <iframe className='w-96 h-60 rounded-2xl butanimo' src="https://www.youtube.com/embed/WU5DXohkMno?si=lpELBCw4hn6BPmKN" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
 
                     <iframe className='w-96 h-60 rounded-2xl butanimo' src="https://www.youtube.com/embed/EiRvJCEiITo?si=JGY3cnopKRQg63L1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
-                </div>
 
+                    <iframe className='w-96 h-60 rounded-2xl butanimo' src="https://www.youtube.com/embed/AFXSIHz_CIM?si=GjeqzV1V5H9mcghR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
             </div>
 
+            <Winners />
             <img
                 src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63905b9f809b5c8180ce30c5_pattern-1.svg"
                 alt=""

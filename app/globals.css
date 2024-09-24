@@ -7,7 +7,7 @@
 }
 
 .animo {
-    @apply hover:duration-500
+    @apply hover:duration-500 duration-500
 }
 
 .butanimo {

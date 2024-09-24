@@ -5,6 +5,7 @@ import { Services } from "./Services";
 import Link from "next/link";
 import Marketing from "./Marketing"
 import Inex from "../inex/Inex"
+import Winners from "../about/Winners"
 
 const shuffle = (array) => {
     let currentIndex = array.length,
@@ -90,6 +91,7 @@ const ShuffleHero = () => {
                 <ShuffleGrid />
             </section>
             <Inex />
+            <Winners />
             <Marketing />
             <Services />
         </div>
