@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight } from "react-icons/fi";
-import { SiLinkedin, SiInstagram } from "react-icons/si";
+import { SiLinkedin, SiInstagram, SiYoutube, SiFacebook } from "react-icons/si";
 import Image from "next/image";
 import brand from '../../public/logo.png'
 
@@ -18,8 +18,8 @@ export const Base = () => {
                 }}
                 className="mx-auto grid max-w-7xl grid-flow-dense grid-cols-12 gap-4"
             >
-                <HeaderBlock />
                 <SocialsBlock />
+                <HeaderBlock />
                 <LocationBlock />
             </motion.div>
             <Foot />
@@ -65,10 +65,10 @@ const HeaderBlock = () => (
             </span>
         </h1>
         <a
-            href="mailto:contact@plyronest.com"
+            href="mailto:plyronest8@gmail.com"
             className="flex items-center gap-1 text-black justify-between btn"
         >
-            contact@plyronest.com <FiArrowRight />
+            plyronest8@gmail.com <FiArrowRight />
         </a>
     </Block>
 );
@@ -89,6 +89,7 @@ const SocialsBlock = () => (
                 <SiLinkedin />
             </a>
         </Block>
+
         <Block
             whileHover={{
                 rotate: "-1.5deg",
@@ -101,6 +102,35 @@ const SocialsBlock = () => (
                 className="grid h-full place-content-center text-3xl text-white"
             >
                 <SiInstagram />
+            </a>
+        </Block>
+
+        <Block
+            whileHover={{
+                rotate: "-1.5deg",
+                scale: 1.1,
+            }}
+            className="col-span-6 bg-blue-600 md:col-span-3"
+        >
+            <a
+                className="grid h-full place-content-center text-3xl text-white"
+            >
+                <SiFacebook />
+            </a>
+        </Block>
+
+        <Block
+            whileHover={{
+                rotate: "-1.5deg",
+                scale: 1.1,
+            }}
+            className="col-span-6 bg-red-600 md:col-span-3"
+        >
+            <a
+                href="https://www.youtube.com/@PLYRoNeST8/videos" target="_blank"
+                className="grid h-full place-content-center text-3xl text-white"
+            >
+                <SiYoutube />
             </a>
         </Block>
     </>

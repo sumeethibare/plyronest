@@ -53,7 +53,7 @@ export default function Winners() {
 
     return (
         <div className="bg-zinc-50 max-w-2xl px-4 py-6 sm:px-6 sm:py-24 lg:min-w-full lg:px-20">
-            <p className='text-zinc-900 text-3xl font-semibold'>Winners Of Inex Karnataka Chapter</p>
+            <p className='text-zinc-900 text-2xl font-semibold'>Winners Of Inex Karnataka Chapter - Remote Area Tack</p>
             <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                 {postermarkets.map((postermarket) => (
                     <div key={postermarket.id} className="group relative">

@@ -38,9 +38,9 @@ function Navbar() {
                             <Bars2Icon className="h-6 w-6" aria-hidden="true" />
                         </button>
                     </div>
-                    <div className="hidden lg:flex lg:gap-x-12">
+                    <div className="hidden lg:flex lg:gap-x-6">
                         {navigation.map((item) => (
-                            <Link key={item.name} href={item.href} className="uppercase hover:px-2 hover:text-blue-100 animo leading-6">
+                            <Link key={item.name} href={item.href} className="uppercase hover:px-2 hover:text-green-300 animo leading-6">
                                 {item.name}
                             </Link>
                         ))}

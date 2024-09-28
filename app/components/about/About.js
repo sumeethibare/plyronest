@@ -84,9 +84,6 @@ const ShuffleHero = () => {
                     <Link href="/about" className="text-white bg-zinc-800 font-medium py-2 px-4 butanimo border-black hover:border-green-400 border-2 hover:text-green-400 hover:duration-500 transition-all hover:border-2 mr-2 rounded-xl">
                         know more about us
                     </Link>
-                    <Link href="https://forms.gle/pWVmutarqWmreteJ8" target="_blank" className="bg-white hover:bg-green-400 text-black font-medium py-2 px-4 hover:text-black butanimo hover:duration-300 transition-all rounded-xl">
-                        Register Now
-                    </Link>
                 </div>
                 <ShuffleGrid />
             </section>
